@@ -13,17 +13,15 @@ A CLI tool to help developers kickstart their CrossFi projects with pre-configur
 
 You can use `npx` to run the tool without installation:
 
-```bash
-npx crossfi-init or
-npx crossfi-chain-cli
-```
-
-## Usage
-
 Run the command and follow the prompts:
 
 ```bash
-npx crossfi-init or
+npx crossfi-init
+```
+
+or
+
+```bash
 npx crossfi-chain-cli
 ```
 
@@ -37,7 +35,12 @@ npx crossfi-chain-cli
 1. Run the tool:
 
 ```bash
-npx crossfi-init or
+npx crossfi-init
+```
+
+or
+
+```bash
 npx crossfi-chain-cli
 ```
 
