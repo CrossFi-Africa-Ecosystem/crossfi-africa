@@ -1,5 +1,5 @@
 {
-  "name": "@crossfi/crossfi-africa",
+  "name": "crossfi-africa-template",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
@@ -16,6 +16,13 @@
     "crossfi-africa",
     "crossfi"
   ],
-  "homepage": "https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa#readme"
+  "homepage": "https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa#readme",
+  "publishConfig": { "access": "public" },
+  "bin": {
+    "crossfi-africa": "./bin/cli.js"
+  },
+  "files": [
+    "/bin"
+  ]
 
 }

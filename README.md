@@ -2,7 +2,7 @@
 <p align="center">
   <img width="100px" src="https://miro.medium.com/v2/resize:fit:400/1*mb6-NZ7xv2HQmX29Kl_wPA.jpeg" align="center" alt="CrossFi" />
  <h2 align="center">CrossFi Africa</h2>
- <p align="center">Build, deploy, and iterate quickly on decentralized applications using CrossFi Chain.</p>
+ <p align="center">Build, deploy, and iterate quickly on decentralized applications using CrossFi Africa Template.</p>
 </p>
 
 
