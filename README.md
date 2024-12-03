@@ -5,7 +5,6 @@
  <p align="center">Build, deploy, and iterate quickly on decentralized applications using CrossFi Africa Template.</p>
 </p>
 
-
 <!-- TABLE OF CONTENTS -->
 
 <div> 

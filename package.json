@@ -1,28 +1,46 @@
 {
-  "name": "crossfi-africa-template",
+  "name": "crossfi-cli",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "lint": "tsc",
+    "test": "vitest run"
   },
   "author": "CrossFi Africa Tech Team",
   "license": "MIT",
   "description": "Get started building dApps on CrossFi Chain",
   "keywords": [
     "crossfi-africa",
-    "crossfi"
+    "crossfi",
+    "web3",
+    "Crypto"
   ],
   "homepage": "https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa#readme",
-  "publishConfig": { "access": "public" },
-  "bin": {
-    "crossfi-africa": "./bin/cli.js"
+  "publishConfig": {
+    "access": "public"
   },
-  "files": [
-    "/bin"
-  ]
-
+  "type": "module",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.0",
+    "prettier": "^3.4.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/src/index.js",
+      "default": "./dist/src/index.cjs"
+    }
+  }
 }
