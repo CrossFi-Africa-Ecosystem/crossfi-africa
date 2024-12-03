@@ -1,4 +1,4 @@
-# CrossFi Chain Starter Template
+# CrossFi Chain Starter Kit
 
 A CLI tool to help developers kickstart their CrossFi projects with pre-configured Hardhat and React templates.
 

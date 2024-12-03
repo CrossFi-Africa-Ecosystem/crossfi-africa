@@ -1,5 +1,5 @@
 {
-  "name": "crossfi-chain-kit",
+  "name": "crossfi-chain-starter-kit",
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "description": "A CLI tool for bootstrapping CrossFi projects with pre-configured Hardhat and React setups.",
   "bin": {
     "crossfi-init": "./index.js",
-    "crossfi-chain-kit": "./index.js"
+    "crossfi-chain-starter-kit": "./index.js"
   },
   "devDependencies": {
     "hardhat": "^2.22.17"
