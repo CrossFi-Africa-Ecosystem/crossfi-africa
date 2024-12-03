@@ -1,0 +1,5 @@
+---
+"crossfi-cli": patch
+---
+
+"release"
