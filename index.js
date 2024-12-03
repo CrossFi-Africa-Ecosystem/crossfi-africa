@@ -22,8 +22,8 @@ async function main() {
 
         // Setup React project
         console.log('Setting up React project...');
-        const reactPath = path.join(projectPath, 'react-app');
-        fs.copySync(path.join(templatesDir, 'react-app'), reactPath);
+        const reactPath = path.join(projectPath, 'frontend');
+        fs.copySync(path.join(templatesDir, 'react'), reactPath);
         console.log('React project created.');
 
         // Install dependencies for both Hardhat and React projects
