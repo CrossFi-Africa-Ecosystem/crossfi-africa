@@ -8,5 +8,4 @@
   "updateInternalDependencies": "patch",
   "ignore": [],
   "access": "public"
-
 }

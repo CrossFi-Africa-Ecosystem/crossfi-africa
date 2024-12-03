@@ -19,7 +19,6 @@
     "module": "Preserve",
 
     "noEmit": true
-
   },
   "include": ["src/**/*"],
 
