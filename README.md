@@ -17,7 +17,7 @@ Run the command and follow the prompts:
 
 
 ```bash
-npx crossfi-kit
+npx crossfi-kit-template
 ```
 
 ## Options
@@ -30,7 +30,7 @@ npx crossfi-kit
 1. Run the tool:
 
 ```bash
-npx crossfi-kit
+npx crossfi-kit-template
 ```
 
 2. Choose "Both" to generate a full-stack project:
