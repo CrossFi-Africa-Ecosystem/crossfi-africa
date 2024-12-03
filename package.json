@@ -21,7 +21,6 @@
   "license": "MIT",
   "description": "A CLI tool for bootstrapping CrossFi projects with pre-configured Hardhat and React setups.",
   "bin": {
-    "crossfi-init": "./index.js",
     "crossfi-chain-starter-kit": "./index.js"
   },
   "devDependencies": {

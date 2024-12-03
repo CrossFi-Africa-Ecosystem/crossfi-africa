@@ -15,11 +15,6 @@ You can use `npx` to run the tool without installation:
 
 Run the command and follow the prompts:
 
-```bash
-npx crossfi-init
-```
-
-or
 
 ```bash
 npx crossfi-chain-cli
@@ -33,12 +28,6 @@ npx crossfi-chain-cli
 ## Example
 
 1. Run the tool:
-
-```bash
-npx crossfi-init
-```
-
-or
 
 ```bash
 npx crossfi-chain-cli
