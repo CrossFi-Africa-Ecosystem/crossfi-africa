@@ -4,13 +4,7 @@
  <h2 align="center">CrossFi Africa</h2>
  <p align="center">Build, deploy, and iterate quickly on decentralized applications using CrossFi Chain.</p>
 </p>
-  <p align="center">
-   
-    <a href="https://opensource.org/license/mit/">
-      <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-    </a>
-  </p>
-</p>
+
 
 <!-- TABLE OF CONTENTS -->
 
@@ -74,46 +68,9 @@ CrossFi Africa leverages modern blockchain technologies, offering support for va
 
 The easiest way to start with CrossFi Africa is using `@crossfi/crossfi-africa`. This CLI tool lets you quickly start building dApps on CrossFi, including several templates. To get started, just run the following command, and follow the steps:
 
-- Step 1
-
 ```bash
-npm i @crossfi/crossfi-africa
+npx @crossfi/crossfi-africa
 ```
-
-- Step 2: Provide the Project Name: You will be prompted to enter the name of your project.
-
-```text
-What is your project name:
-```
-
-- Step 3: Choose to Use Hardhat: You will be asked if you want to use Hardhat. Select Yes or No.
-
-```text
-Do you want to use Hardhat? (Y/n)
-```
-
-- Step 4: Choose to Use a Template: You will be asked if you want to use a template. Select `Yes` or `No`.
-
-```text
-Do you want to use a template?
-```
-
-- Step 5: Select a Template: If you chose to use a template, you will be prompted to select a template from the list provided.
-
-```text
-- Minipay
-- Valora
-```
-
-- Step 6: Provide the Project Owner's Name: You will be asked to enter the project owner's name.
-
-```text
-Project Owner name:
-```
-
-- Step 7: Wait for Project Creation: The CLI will now create the project based on your inputs. This may take a few minutes.
-
-- Step 8: Follow the instructions to start the project. The same will be displayed on the console after the project is created.
 
 ```text
 🚀 Your starter project has been successfully created!
@@ -176,7 +133,6 @@ If you prefer npm, you can run:
 
 Thank you for using CrossFi Africa! If you have any questions or need further assistance, please refer to the README or reach out to our team.
 
-
 ## Supported Frameworks
 
 ### React / Nextjs
@@ -192,9 +148,6 @@ Check [nextjs docs](https://nextjs.org/docs) to learn more about it.
 - Compatible with various Ethereum development tools and plugins.
 
 Check [hardhat docs](https://hardhat.org/hardhat-runner/docs/getting-started) to learn more about it.
-
-
-
 
 <!-- CONTRIBUTING -->
 
