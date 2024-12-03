@@ -17,7 +17,7 @@ Run the command and follow the prompts:
 
 
 ```bash
-npx crossfi-chain-cli
+npx crossfi-kit
 ```
 
 ## Options
@@ -30,7 +30,7 @@ npx crossfi-chain-cli
 1. Run the tool:
 
 ```bash
-npx crossfi-chain-cli
+npx crossfi-kit
 ```
 
 2. Choose "Both" to generate a full-stack project:
