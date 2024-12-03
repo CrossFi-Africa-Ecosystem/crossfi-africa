@@ -1,0 +1,21 @@
+{
+  "name": "@crossfi/crossfi-africa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CrossFi Africa Tech Team",
+  "license": "MIT",
+  "description": "Get started building dApps on CrossFi Chain",
+  "keywords": [
+    "crossfi-africa",
+    "crossfi"
+  ],
+  "homepage": "https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa#readme"
+
+}
