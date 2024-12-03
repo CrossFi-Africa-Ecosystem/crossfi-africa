@@ -14,7 +14,8 @@ A CLI tool to help developers kickstart their CrossFi projects with pre-configur
 You can use `npx` to run the tool without installation:
 
 ```bash
-npx crossfi-init
+npx crossfi-init or
+npx crossfi-chain-cli
 ```
 
 ## Usage
@@ -22,7 +23,8 @@ npx crossfi-init
 Run the command and follow the prompts:
 
 ```bash
-npx crossfi-init
+npx crossfi-init or
+npx crossfi-chain-cli
 ```
 
 ## Options
@@ -35,7 +37,8 @@ npx crossfi-init
 1. Run the tool:
 
 ```bash
-npx crossfi-init
+npx crossfi-init or
+npx crossfi-chain-cli
 ```
 
 2. Choose "Both" to generate a full-stack project:
@@ -50,7 +53,7 @@ npx crossfi-init
 
 Enter your project name:
 
-```bash
+````bash
 ? Enter your project name: my-crossfi-app
 The tool sets up the project and installs dependencies automatically:
 
@@ -59,7 +62,8 @@ Setting up Hardhat project...
 Setting up React project...
 Installing dependencies...
 All done! 🚀
-```
+````
+
 - Your project is ready to go:
 
 ```bash
@@ -69,4 +73,5 @@ my-crossfi-app/
 ```
 
 ## License
-MIT
+
+[MIT](https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa/blob/main/LICENSE)
