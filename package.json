@@ -1,6 +1,6 @@
 {
   "name": "crossfi-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -16,8 +16,6 @@
     "test": "vitest run",
     "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci"
-
-
   },
   "author": "CrossFi Africa Tech Team",
   "license": "MIT",
