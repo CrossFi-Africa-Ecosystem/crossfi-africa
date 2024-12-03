@@ -4,8 +4,8 @@
   "commit": true,
   "fixed": [],
   "linked": [],
+  "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": [],
-  "access": "public"
+  "ignore": []
 }
