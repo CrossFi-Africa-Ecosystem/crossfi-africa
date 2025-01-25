@@ -38,7 +38,7 @@
 
 ## About The Project
 
-CrossFi Africa empowers developers to quickly build, deploy, and iterate on decentralized applications using the CrossFi Chain. It provides an intuitive environment with tools, templates, and frameworks to simplify the development process for Africa-focused decentralized apps.
+CrossFi Africa Template empowers developers to quickly build, deploy, and iterate on decentralized applications using the CrossFi Chain. It provides an intuitive environment with tools, templates, and frameworks to simplify the development process for Africa-focused decentralized apps.
 
 Perfect for hackathons or large-scale projects, CrossFi Africa ensures a seamless experience, enabling rapid development and deployment of dApps with interoperability and high scalability.
 
