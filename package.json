@@ -1,10 +1,10 @@
 {
-  "name": "crossfi-africa-cli",
-  "version": "1.0.3",
+  "name": "crossfi-appkit",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa.git"
+    "url": "git+https://github.com/ameer017/crossfi-africa-cli.git"
   },
   "scripts": {
     "build": "tsup",
@@ -15,16 +15,17 @@
     "test": "vitest run",
     "local-release": "changeset version && changeset publish --yes"
   },
-  "author": "CrossFi Africa Tech Team",
+  "author": "",
   "license": "MIT",
   "description": "Get started building dApps on CrossFi Chain",
   "keywords": [
-    "crossfi-africa",
-    "crossfi",
+    "crossfi chain",
+    "EVM",
+    "Cosmos",
     "web3",
     "Crypto"
   ],
-  "homepage": "https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa#readme",
+  "homepage": "https://github.com/ameer017/crossfi-africa-cli/blob/main/README.md",
   "publishConfig": {
     "access": "public"
   },
@@ -32,10 +33,14 @@
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.0",
     "@changesets/cli": "^2.27.10",
+    "hardhat": "^2.22.18",
     "prettier": "^3.4.1",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"
+  },
+  "bin": {
+    "create-crossfi-appkit": "./index.js"
   },
   "exports": {
     "./package.json": "./package.json",
@@ -43,5 +48,12 @@
       "import": "./dist/index.js",
       "default": "./dist/index.cjs"
     }
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "child_process": "^1.0.2",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.4.1",
+    "path": "^0.12.7"
   }
 }
