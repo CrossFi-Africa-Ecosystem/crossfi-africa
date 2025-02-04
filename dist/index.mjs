@@ -1,18 +1,25 @@
 #!/usr/bin/env node
-const inquirer = require("inquirer");
-const path = require("path");
-const { spawnSync } = require("child_process");
-const {
+var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
+  get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
+}) : x)(function(x) {
+  if (typeof require !== "undefined") return require.apply(this, arguments);
+  throw Error('Dynamic require of "' + x + '" is not supported');
+});
+
+// index.js
+var inquirer = __require("inquirer");
+var path = __require("path");
+var { spawnSync } = __require("child_process");
+var {
   copySync,
   existsSync,
   readJSONSync,
   writeJSONSync,
-  readdirSync,
-} = require("fs-extra");
-const chalk = require("chalk");
-const { prompt } = require("enquirer");
-const fs = require("fs");
-
+  readdirSync
+} = __require("fs-extra");
+var chalk = __require("chalk");
+var { prompt } = __require("enquirer");
+var fs = __require("fs");
 async function main() {
   try {
     const projectName = process.argv[2];
@@ -23,19 +30,13 @@ async function main() {
       );
       process.exit(1);
     }
-
     const projectPath = path.resolve(projectName);
     const templateBase = path.join(__dirname, "templates");
-
     if (existsSync(projectPath)) {
       console.error(chalk.red(`Directory ${projectName} already exists!`));
       process.exit(1);
     }
-
-    // Create the project directory
     fs.mkdirSync(projectPath, { recursive: true });
-
-    // Copy Hardhat files directly into the projectPath (without 'hardhat' folder)
     const hardhatTemplatePath = path.join(templateBase, "hardhat");
     readdirSync(hardhatTemplatePath).forEach((file) => {
       copySync(
@@ -43,31 +44,23 @@ async function main() {
         path.join(projectPath, file)
       );
     });
-
-    // Prompt for frontend framework selection
     const { framework } = await prompt([
       {
         type: "select",
         name: "framework",
         message: "Choose your frontend framework:",
-        choices: ["react-app", "next-app"],
-      },
+        choices: ["react-app", "next-app"]
+      }
     ]);
-
-    // Copy the selected frontend framework into the project directory
     const frontendTemplate = path.join(templateBase, framework);
-    const frontendPath = path.join(projectPath, framework); // Use the framework name as the folder
+    const frontendPath = path.join(projectPath, framework);
     copySync(frontendTemplate, frontendPath, { overwrite: true });
-
-    // Read package.json from both hardhat and frontend
     const hardhatPkg = readJSONSync(
       path.join(templateBase, "hardhat", "package.json")
     );
     const frontendPkg = readJSONSync(
       path.join(frontendTemplate, "package.json")
     );
-
-    // Merge package.json files
     const mergedPackage = {
       ...hardhatPkg,
       ...frontendPkg,
@@ -75,22 +68,14 @@ async function main() {
       dependencies: { ...hardhatPkg.dependencies, ...frontendPkg.dependencies },
       devDependencies: {
         ...hardhatPkg.devDependencies,
-        ...frontendPkg.devDependencies,
-      },
+        ...frontendPkg.devDependencies
+      }
     };
-
-    // Write the merged package.json into the project directory
     writeJSONSync(path.join(projectPath, "package.json"), mergedPackage, {
-      spaces: 2,
+      spaces: 2
     });
-
-    // Update the hardhat.config.ts with the correct artifact path
     const hardhatConfigPath = path.join(projectPath, "hardhat.config.ts");
-    const artifactPath =
-      framework === "react-app"
-        ? "paths: { artifacts: './src/contracts/artifacts' }"
-        : "paths: { artifacts: './app/contracts/artifacts' }";
-
+    const artifactPath = framework === "react-app" ? "paths: { artifacts: './src/contracts/artifacts' }" : "paths: { artifacts: './app/contracts/artifacts' }";
     if (fs.existsSync(hardhatConfigPath)) {
       const configContent = fs.readFileSync(hardhatConfigPath, "utf-8");
       fs.writeFileSync(
@@ -100,28 +85,29 @@ async function main() {
     } else {
       console.warn(
         chalk.yellow(
-          "⚠️ Warning: hardhat.config.ts not found, skipping modification."
+          "\u26A0\uFE0F Warning: hardhat.config.ts not found, skipping modification."
         )
       );
     }
-
     console.log(chalk.blue("\nInstalling dependencies..."));
     spawnSync("npm", ["install"], {
       cwd: projectPath,
       stdio: "inherit",
-      shell: true,
+      shell: true
     });
-
-    console.log(chalk.greenBright("\n✅ Project setup completed!"));
+    console.log(chalk.greenBright("\n\u2705 Project setup completed!"));
     console.log(
       chalk.cyan(
-        `\nTo get started:\n  cd ${projectName}\n  cd ${framework}\n  npm run dev`
+        `
+To get started:
+  cd ${projectName}
+  cd ${framework}
+  npm run dev`
       )
     );
   } catch (error) {
-    console.error(chalk.red("\n⚠️  Setup error:"), error);
+    console.error(chalk.red("\n\u26A0\uFE0F  Setup error:"), error);
     process.exit(1);
   }
 }
-
 main();
