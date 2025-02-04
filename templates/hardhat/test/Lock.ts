@@ -1,3 +1,5 @@
+<<<<<<< HEAD:packages/hardhat/test/Lock.ts
+=======
 import {
   time,
   loadFixture,
@@ -125,3 +127,4 @@ describe("Lock", function () {
     });
   });
 });
+>>>>>>> 65f2b4b04551f067c3ef240320c5d2ff8d997eb9:templates/hardhat/test/Lock.ts
