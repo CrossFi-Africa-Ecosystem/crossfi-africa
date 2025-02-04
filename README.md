@@ -173,9 +173,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Contact
 
-**CrossFi Africa Team**  
+**CrossFi Appkit Team**  
 - GitHub Issues: [Report a Bug](https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa/issues)  
-- Discord: [Join Community](https://discord.gg/crossfi-africa)  
-- Email: [dev-support@crossfi.org](mailto:dev-support@crossfi.org)
+- Telegram: [Send A DM](https://t.me/alAmeer170)  
+- Email: [rajiabdullahi907@gmail.com](mailto:rajiabdullahi907@gmail.com)
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
