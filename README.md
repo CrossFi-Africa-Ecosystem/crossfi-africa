@@ -1,169 +1,181 @@
+
 <!-- TITLE -->
 <p align="center">
-  <img width="100px" src="https://miro.medium.com/v2/resize:fit:400/1*mb6-NZ7xv2HQmX29Kl_wPA.jpeg" align="center" alt="CrossFi" />
- <h2 align="center">CrossFi Africa</h2>
- <p align="center">Build, deploy, and iterate quickly on decentralized applications using CrossFi Africa Template.</p>
+  <img width="120px" src="https://miro.medium.com/v2/resize:fit:400/1*mb6-NZ7xv2HQmX29Kl_wPA.jpeg" alt="CrossFi" />
+  <h1 align="center">CrossFi Appkit</h1>
+  <p align="center">Kickstart Web3 development on CrossFi Chain with a flexible, production-ready template for Hardhat + React or Next.js.</p>
+  <p align="center">
+    <a href="https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/license-MIT-blue" alt="License" />
+    </a>
+    <a href="https://www.npmjs.com/package/crossfi-kit-template">
+      <img src="https://img.shields.io/npm/v/crossfi-kit-template" alt="NPM Version" />
+    </a>
+  </p>
 </p>
 
+---
+
 <!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#-why-crossfi-appkit">Why CrossFi Appkit?</a></li>
+    <li><a href="#-features">Features</a></li>
+    <li><a href="#-getting-started">Getting Started</a></li>
+    <li><a href="#-project-structure">Project Structure</a></li>
+    <li><a href="#-supported-frameworks">Supported Frameworks</a></li>
+    <li><a href="#-roadmap">Roadmap</a></li>
+    <li><a href="#-contributing">Contributing</a></li>
+    <li><a href="#-license">License</a></li>
+    <li><a href="#-contact">Contact</a></li>
+  </ol>
+</details>
 
-<div> 
-    <summary>Table of Contents</summary> 
-        <ol> 
-            <li><a href="#about-the-project">About The Project</a></li> 
-            <ol> 
-                <li><a href="#built-with">Built With</a></li> 
-                <li><a href="#prerequisites">Prerequisites</a></li> 
-            </ol> 
-            <li><a href="#how-to-use-crossfi-africa">How to Use CrossFi Africa</a></li> 
-            <ol> 
-                <li><a href="#install-dependencies">Install Dependencies</a></li> 
-                <li><a href="#deploy-a-smart-contract">Deploy a Smart Contract</a></li> 
-                <li><a href="#deploy-your-dapp-locally">Deploy Your Dapp Locally</a></li> 
-                <li><a href="#add-ui-components">Add UI Components</a></li> 
-                <li><a href="#deploy-with-vercel">Deploy with Vercel</a></li> 
-                <li><a href="#supported-frameworks">Supported Frameworks</a></li> 
-                <li><a href="#supported-templates">Supported Templates</a></li> 
-            </ol> 
-            <li><a href="#usage">Usage</a></li> 
-            <li><a href="#support">Support</a></li> 
-            <li><a href="#roadmap">Roadmap</a></li> 
-            <li><a href="#contributing">Contributing</a></li> 
-            <li><a href="#license">License</a></li> 
-            <li><a href="#contact">Contact</a></li> 
-        </ol> 
-</div>
+---
 
-<!-- ABOUT THE PROJECT -->
+## 🚀 Why CrossFi AppKit?
 
-## About The Project
+CrossFi Appkit is a **zero-config template** for building decentralized applications on the CrossFi Chain. Designed for developers of all levels, it provides:
 
-CrossFi Africa Template empowers developers to quickly build, deploy, and iterate on decentralized applications using the CrossFi Chain. It provides an intuitive environment with tools, templates, and frameworks to simplify the development process for Africa-focused decentralized apps.
+- **Flexible Framework Choice**: Start with React or Next.js (App Router)
+- **Pre-configured Tooling**: Hardhat (Ethereum development environment), Ethers.js, and Tailwind CSS
+- **Africa-Focused**: Optimized for cross-border DeFi applications and interoperability
+- **Production-Ready**: Includes CI/CD templates, testing suites, and deployment scripts
 
-Perfect for hackathons or large-scale projects, CrossFi Africa ensures a seamless experience, enabling rapid development and deployment of dApps with interoperability and high scalability.
+<p align="right"><a href="#top">↑ Back to top</a></p>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+---
 
-## Built With
+## ✨ Features
 
-CrossFi Africa leverages modern blockchain technologies, offering support for various frameworks and libraries.
+- **Smart Contract Development**
+  - Hardhat setup with TypeScript/JavaScript support
+  - Sample ERC-20 token contract & tests
+  - Preconfigured networks (CrossFi Testnet/Mainnet)
+  
+- **Frontend Integration**
+  - Wallet connection templates (MetaMask, Rabby Wallet)
+  - React/Next.js hooks for contract interaction
+  - Responsive UI components with Tailwind CSS
 
-- [CrossFi Chain](https://crossfi.org/)
-- [Solidity](https://docs.soliditylang.org/en/v0.8.19/)
-- [Hardhat](https://hardhat.org/)
-- [React.js](https://reactjs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- **Deployment Tools**
+  - One-click Vercel deployment
+  - Hardhat deployment scripts
+  - Environment variable management
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">↑ Back to top</a></p>
 
-<!-- GETTING STARTED -->
+---
 
-## Prerequisites
+## 🛠️ Getting Started
 
-- Node (v20 or higher)
-- Git (v2.38 or higher)
+### Prerequisites
+- Node.js ≥ v20
+- npm ≥ v9 or Yarn ≥ v1.22
+- Git ≥ v2.38
 
-## How to use CrossFi Africa
+### Installation
 
-The easiest way to start with CrossFi Africa is using `@crossfi/crossfi-africa`. This CLI tool lets you quickly start building dApps on CrossFi, including several templates. To get started, just run the following command, and follow the steps:
+1. **Create a new project** (replace `my-dapp` with your project name):
+   ```bash
+   npx crossfi-appkit my-dapp
+   ```
 
-```bash
-npx @crossfi/crossfi-africa
-```
+2. **Choose your framework**:
+   ```bash
+   ? Select your frontend framework: (Use arrow keys)
+   ❯ React (Vite)
+     Next.js (App Router)
+   ```
 
-```text
-🚀 Your starter project has been successfully created!
-```
-
-## Install Dependencies
-
-Once your custom dApp has been created, just install dependencies, either with yarn:
-
-```bash
-   yarn
-```
-
-If you prefer npm, you can run:
-
-```bash
+3. **Follow setup instructions**:
+   ```bash
+   cd my-dapp
    npm install
-```
+   ```
 
-## Deploy a Smart Contract
-
-Find the detailed instructions on how to run your smart contract in [packages/hardhat/README.md](./packages/hardhat/README.md).
-
-For quick development follow these three steps:
-
-1. Change `packages/hardhat/env.template` to `packages/hardhat/env` and add your `PRIVATE_KEY` into the `.env` file.
-2. Make sure your wallet is funded when deploying to testnet or mainnet. You can get test tokens for deploying it on crossFiTestnet(XFI) from the [xfiConsole Faucet](https://test.xficonsole.com/cosmos-wallet).
-3. Run the following commands from the `packages/hardhat` folder to deploy your smart contract to the CrossFi Testnet:
-
-```bash
-npx hardhat ignition deploy ./ignition/modules/Lock.ts --network crossFiTestnet
-```
-
-## Deploy your Dapp Locally
-
-Find the detailed instructions on how to run your frontend in the [`react-dapp` README.md](./packages/react-app/README.md).
-
-Before you start the project, please follow these steps:
-
-1. Rename the file:
-   packages/react-app/.env.template
-   to
-   packages/react-app/.env
-
-2. Open the newly renamed .env file and add your Reown Cloud Project ID from [Reown Cloud](https://cloud.reown.com/app/)
-
-Once you've done that, you're all set to start your project!
-
-Run the following commands from the `packages/react-app` folder to start the project:
-
-```bash
-   yarn dev
-```
-
-If you prefer npm, you can run:
-
-```bash
+4. **Start developing**:
+   ```bash
+   # Start frontend
    npm run dev
+
+   # Compile contracts
+   npx hardhat compile
+
+   # Run tests
+   npx hardhat test
+   ```
+
+<p align="right"><a href="#top">↑ Back to top</a></p>
+
+---
+
+## 📁 Project Structure
+
+```bash
+my-dapp/
+├── contracts/           # Solidity smart contracts
+├── scripts/             # Hardhat deployment scripts
+├── test/                # Smart contract tests
+│
+├── frontend/            # React/Next.js frontend
+│   ├── src/             # React components (React template)
+│   ├── app/             # Next.js App Router (Next.js template)
+│   ├── hooks/           # Web3 interaction hooks
+│   └── styles/          # Tailwind CSS configuration
+│
+├── hardhat.config.js    # Hardhat configuration
+└── package.json         # Unified dependencies
 ```
 
-Thank you for using CrossFi Africa! If you have any questions or need further assistance, please refer to the README or reach out to our team.
+<p align="right"><a href="#top">↑ Back to top</a></p>
 
-## Supported Frameworks
+---
 
-### React / Nextjs
+## 🔌 Supported Frameworks
 
-- Support for Website and Progressive Web Application.
-- Works with Metamask and Keplr wallets.
+| Framework       | Features                                                                 |
+|-----------------|--------------------------------------------------------------------------|
+| **React**       | Vite setup, Wallet connection hooks, ERC-20 interaction examples         |
+| **Next.js**     | App Router support, Server Components for Web3, Optimized SSG/SEO       |
 
-Check [nextjs docs](https://nextjs.org/docs) to learn more about it.
+---
 
-### Hardhat
+## 🗺️ Roadmap
 
-- Robust framework for building and testing smart contracts.
-- Compatible with various Ethereum development tools and plugins.
+- [ ] Add Vue.js template support
+- [ ] CrossFi Chain SDK integration
+- [ ] Multi-sig wallet templates
+- [ ] Gasless transaction examples
 
-Check [hardhat docs](https://hardhat.org/hardhat-runner/docs/getting-started) to learn more about it.
 
-<!-- CONTRIBUTING -->
 
-## Contributing
+---
 
-We welcome contributions from the community.
+## 🤝 Contributing
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+We welcome contributions! Please see our [Contribution Guidelines](CONTRIBUTING.md) and:
 
-## License
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
+---
 
-## Contact
+## 📞 Contact
 
-- [@CrossFiAfrica](https://x.com/CrossFiAfrica)
+**CrossFi Africa Team**  
+- GitHub Issues: [Report a Bug](https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa/issues)  
+- Discord: [Join Community](https://discord.gg/crossfi-africa)  
+- Email: [dev-support@crossfi.org](mailto:dev-support@crossfi.org)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">↑ Back to top</a></p>

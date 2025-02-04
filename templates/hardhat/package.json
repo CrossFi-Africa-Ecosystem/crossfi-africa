@@ -1,0 +1,14 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+<<<<<<< HEAD:packages/hardhat/package.json
+    "hardhat": "^2.22.18"
+  },
+  "dependencies": {
+    "ethers": "^6.13.5"
+=======
+    "hardhat": "^2.22.17"
+>>>>>>> 65f2b4b04551f067c3ef240320c5d2ff8d997eb9:templates/hardhat/package.json
+  }
+}
