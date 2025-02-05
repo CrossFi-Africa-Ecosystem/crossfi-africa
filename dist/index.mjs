@@ -7,7 +7,6 @@ var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require
 });
 
 // index.js
-var inquirer = __require("inquirer");
 var path = __require("path");
 var { spawnSync } = __require("child_process");
 var {
@@ -102,6 +101,7 @@ async function main() {
 To get started:
   cd ${projectName}
   cd ${framework}
+ npm install
   npm run dev`
       )
     );
