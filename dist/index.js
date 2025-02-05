@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 // index.js
-var inquirer = require("inquirer");
 var path = require("path");
 var { spawnSync } = require("child_process");
 var {
@@ -96,6 +95,7 @@ async function main() {
 To get started:
   cd ${projectName}
   cd ${framework}
+ npm install
   npm run dev`
       )
     );

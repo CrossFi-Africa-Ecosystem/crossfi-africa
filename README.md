@@ -1,7 +1,7 @@
 <!-- TITLE -->
 <p align="center">
   <img width="120px" src="https://miro.medium.com/v2/resize:fit:400/1*mb6-NZ7xv2HQmX29Kl_wPA.jpeg" alt="CrossFi" />
-  <h1 align="center">CrossFi Appkit</h1>
+  <h1 align="center">create-crossfi-appkit</h1>
   <p align="center">Kickstart Web3 development on CrossFi Chain with a flexible, production-ready template for Hardhat + React or Next.js.</p>
   <p align="center">
     <a href="https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa/blob/main/LICENSE">
@@ -19,7 +19,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#-why-crossfi-appkit">Why CrossFi Appkit?</a></li>
+    <li><a href="#-why-crossfi-appkit">Why create-crossfi-appkit?</a></li>
     <li><a href="#-features">Features</a></li>
     <li><a href="#-getting-started">Getting Started</a></li>
     <li><a href="#-project-structure">Project Structure</a></li>
@@ -80,7 +80,7 @@ CrossFi Appkit is a **zero-config template** for building decentralized applicat
 1. **Create a new project** (replace `my-dapp` with your project name):
 
    ```bash
-   npx crossfi-appkit my-dapp
+   npx create-crossfi-appkit my-dapp
    ```
 
 2. **Choose your framework**:
