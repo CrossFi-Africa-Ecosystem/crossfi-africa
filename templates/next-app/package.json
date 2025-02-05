@@ -10,10 +10,11 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
-    "@reown/appkit": "^1.6.0",
-    "@reown/appkit-adapter-ethers": "^1.6.0",
+    "@reown/appkit": "^1.6.5",
+    "@reown/appkit-adapter-ethers": "^1.6.5",
     "@reown/appkit-adapter-wagmi": "^1.6.3",
     "@reown/appkit-siwe": "^1.6.0",
+    "ethers": "^6.13.5",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

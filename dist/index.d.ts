@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require("inquirer");
 const path = require("path");
 const { spawnSync } = require("child_process");
 const {
@@ -31,8 +32,10 @@ async function main() {
       process.exit(1);
     }
 
+    // Create the project directory
     fs.mkdirSync(projectPath, { recursive: true });
 
+    // Copy Hardhat files directly into the projectPath (without 'hardhat' folder)
     const hardhatTemplatePath = path.join(templateBase, "hardhat");
     readdirSync(hardhatTemplatePath).forEach((file) => {
       copySync(
@@ -41,6 +44,7 @@ async function main() {
       );
     });
 
+    // Prompt for frontend framework selection
     const { framework } = await prompt([
       {
         type: "select",
@@ -50,10 +54,12 @@ async function main() {
       },
     ]);
 
+    // Copy the selected frontend framework into the project directory
     const frontendTemplate = path.join(templateBase, framework);
-    const frontendPath = path.join(projectPath, framework);
+    const frontendPath = path.join(projectPath, framework); // Use the framework name as the folder
     copySync(frontendTemplate, frontendPath, { overwrite: true });
 
+    // Read package.json from both hardhat and frontend
     const hardhatPkg = readJSONSync(
       path.join(templateBase, "hardhat", "package.json")
     );
@@ -61,6 +67,7 @@ async function main() {
       path.join(frontendTemplate, "package.json")
     );
 
+    // Merge package.json files
     const mergedPackage = {
       ...hardhatPkg,
       ...frontendPkg,
@@ -72,10 +79,12 @@ async function main() {
       },
     };
 
+    // Write the merged package.json into the project directory
     writeJSONSync(path.join(projectPath, "package.json"), mergedPackage, {
       spaces: 2,
     });
 
+    // Update the hardhat.config.ts with the correct artifact path
     const hardhatConfigPath = path.join(projectPath, "hardhat.config.ts");
     const artifactPath =
       framework === "react-app"
@@ -106,7 +115,7 @@ async function main() {
     console.log(chalk.greenBright("\n✅ Project setup completed!"));
     console.log(
       chalk.cyan(
-        `\nTo get started:\n  cd ${projectName}\n  cd ${framework}\n npm install\n  npm run dev`
+        `\nTo get started:\n  cd ${projectName}\n  cd ${framework}\n  npm run dev`
       )
     );
   } catch (error) {
