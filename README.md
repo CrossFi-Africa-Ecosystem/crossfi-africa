@@ -1,4 +1,3 @@
-
 <!-- TITLE -->
 <p align="center">
   <img width="120px" src="https://miro.medium.com/v2/resize:fit:400/1*mb6-NZ7xv2HQmX29Kl_wPA.jpeg" alt="CrossFi" />
@@ -8,8 +7,8 @@
     <a href="https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa/blob/main/LICENSE">
       <img src="https://img.shields.io/badge/license-MIT-blue" alt="License" />
     </a>
-    <a href="https://www.npmjs.com/package/crossfi-kit-template">
-      <img src="https://img.shields.io/npm/v/crossfi-kit-template" alt="NPM Version" />
+    <a href="https://www.npmjs.com/package/crossfi-appkit">
+      <img src="https://img.shields.io/npm/v/crossfi-appkit" alt="NPM Version" />
     </a>
   </p>
 </p>
@@ -53,8 +52,8 @@ CrossFi Appkit is a **zero-config template** for building decentralized applicat
   - Hardhat setup with TypeScript/JavaScript support
   - Sample ERC-20 token contract & tests
   - Preconfigured networks (CrossFi Testnet/Mainnet)
-  
 - **Frontend Integration**
+
   - Wallet connection templates (MetaMask, Rabby Wallet)
   - React/Next.js hooks for contract interaction
   - Responsive UI components with Tailwind CSS
@@ -71,6 +70,7 @@ CrossFi Appkit is a **zero-config template** for building decentralized applicat
 ## 🛠️ Getting Started
 
 ### Prerequisites
+
 - Node.js ≥ v20
 - npm ≥ v9 or Yarn ≥ v1.22
 - Git ≥ v2.38
@@ -78,11 +78,13 @@ CrossFi Appkit is a **zero-config template** for building decentralized applicat
 ### Installation
 
 1. **Create a new project** (replace `my-dapp` with your project name):
+
    ```bash
    npx crossfi-appkit my-dapp
    ```
 
 2. **Choose your framework**:
+
    ```bash
    ? Select your frontend framework: (Use arrow keys)
    ❯ React (Vite)
@@ -90,12 +92,14 @@ CrossFi Appkit is a **zero-config template** for building decentralized applicat
    ```
 
 3. **Follow setup instructions**:
+
    ```bash
    cd my-dapp
    npm install
    ```
 
 4. **Start developing**:
+
    ```bash
    # Start frontend
    npm run dev
@@ -135,10 +139,10 @@ my-dapp/
 
 ## 🔌 Supported Frameworks
 
-| Framework       | Features                                                                 |
-|-----------------|--------------------------------------------------------------------------|
-| **React**       | Vite setup, Wallet connection hooks, ERC-20 interaction examples         |
-| **Next.js**     | App Router support, Server Components for Web3, Optimized SSG/SEO       |
+| Framework   | Features                                                          |
+| ----------- | ----------------------------------------------------------------- |
+| **React**   | Vite setup, Wallet connection hooks, ERC-20 interaction examples  |
+| **Next.js** | App Router support, Server Components for Web3, Optimized SSG/SEO |
 
 ---
 
@@ -148,8 +152,6 @@ my-dapp/
 - [ ] CrossFi Chain SDK integration
 - [ ] Multi-sig wallet templates
 - [ ] Gasless transaction examples
-
-
 
 ---
 
@@ -173,9 +175,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Contact
 
-**CrossFi Appkit Team**  
-- GitHub Issues: [Report a Bug](https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa/issues)  
-- Telegram: [Send A DM](https://t.me/alAmeer170)  
+**CrossFi Appkit Team**
+
+- GitHub Issues: [Report a Bug](https://github.com/CrossFi-Africa-Ecosystem/crossfi-africa/issues)
+- Telegram: [Send A DM](https://t.me/alAmeer170)
 - Email: [rajiabdullahi907@gmail.com](mailto:rajiabdullahi907@gmail.com)
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
